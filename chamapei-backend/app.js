@@ -32,3 +32,8 @@ app.use("/dashboard", dashboardRoutes);
 const groupRoutes = require("./src/routes/groups");
 
 app.use("/groups", groupRoutes);
+
+// connect the ai route to app
+const aiRoutes = require("./src/routes/ai");
+
+app.use("/ai", aiRoutes);
